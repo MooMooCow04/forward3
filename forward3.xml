@@ -15,18 +15,12 @@
                 <field name="NUM">3000</field>
               </block>
             </value>
-            <next>
-              <block type="movement_stop" id="7"></block>
-            </next>
           </block>
         </next>
       </block>
     </statement>
     <statement name="ELSE">
-      <block type="movement_stop" id="3"></block>
+      <block type="movement_stop" id="7"></block>
     </statement>
-    <next>
-      <block type="movement_stop" id="8"></block>
-    </next>
   </block>
 </xml>

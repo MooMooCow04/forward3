@@ -1,32 +1,32 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_if" id="138" inline="false" x="164" y="37">
+  <block type="controls_if" id="1" inline="false" x="164" y="37">
     <mutation else="1"></mutation>
     <value name="IF0">
-      <block type="sensor_button" id="56">
+      <block type="sensor_button" id="2">
         <field name="OBJECT">ENTER</field>
       </block>
     </value>
     <statement name="DO0">
-      <block type="movement_stop" id="171"></block>
+      <block type="movement_stop" id="3"></block>
     </statement>
     <statement name="ELSE">
-      <block type="movement_forward" id="182">
+      <block type="movement_forward" id="4">
         <next>
-          <block type="robot_delay" id="238" inline="true">
+          <block type="robot_delay" id="5" inline="true">
             <value name="DELAY">
-              <block type="math_number" id="245">
+              <block type="math_number" id="6">
                 <field name="NUM">3000</field>
               </block>
             </value>
             <next>
-              <block type="movement_stop" id="272"></block>
+              <block type="movement_stop" id="7"></block>
             </next>
           </block>
         </next>
       </block>
     </statement>
     <next>
-      <block type="movement_stop" id="262"></block>
+      <block type="movement_stop" id="8"></block>
     </next>
   </block>
 </xml>

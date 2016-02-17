@@ -16,38 +16,35 @@
               </block>
             </value>
             <next>
-              <block type="movement_stop" id="337">
-                <next>
-                  <block type="movement_stop" id="338"></block>
-                </next>
-              </block>
+              <block type="movement_stop" id="337"></block>
             </next>
           </block>
         </next>
       </block>
     </statement>
     <statement name="ELSE">
-      <block type="controls_repeat" id="387" inline="true">
-        <value name="TIMES">
-          <block type="math_number" id="394">
-            <field name="NUM">3</field>
-          </block>
-        </value>
-        <statement name="DO">
-          <block type="movement_forward" id="356">
-            <next>
-              <block type="robot_delay" id="370" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="380">
-                    <field name="NUM">1000</field>
-                  </block>
-                </value>
-              </block>
-            </next>
-          </block>
-        </statement>
+      <block type="movement_stop" id="405">
         <next>
-          <block type="movement_stop" id="340"></block>
+          <block type="controls_repeat" id="387" inline="true">
+            <value name="TIMES">
+              <block type="math_number" id="394">
+                <field name="NUM">3</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="movement_forward" id="356">
+                <next>
+                  <block type="robot_delay" id="370" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="380">
+                        <field name="NUM">1000</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
         </next>
       </block>
     </statement>

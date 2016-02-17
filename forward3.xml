@@ -1,42 +1,42 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_if" id="239" inline="false" x="-136" y="-93">
+  <block type="controls_if" id="1" inline="false" x="-136" y="-93">
     <mutation else="1"></mutation>
     <value name="IF0">
-      <block type="sensor_button" id="250">
+      <block type="sensor_button" id="2">
         <field name="OBJECT">UP</field>
       </block>
     </value>
     <statement name="DO0">
-      <block type="movement_stop" id="303">
+      <block type="movement_stop" id="3">
         <next>
-          <block type="robot_delay" id="305" inline="true">
+          <block type="robot_delay" id="4" inline="true">
             <value name="DELAY">
-              <block type="math_number" id="312">
+              <block type="math_number" id="5">
                 <field name="NUM">5000</field>
               </block>
             </value>
             <next>
-              <block type="movement_stop" id="337"></block>
+              <block type="movement_stop" id="6"></block>
             </next>
           </block>
         </next>
       </block>
     </statement>
     <statement name="ELSE">
-      <block type="movement_stop" id="405">
+      <block type="movement_stop" id="7">
         <next>
-          <block type="controls_repeat" id="387" inline="true">
+          <block type="controls_repeat" id="8" inline="true">
             <value name="TIMES">
-              <block type="math_number" id="394">
+              <block type="math_number" id="9">
                 <field name="NUM">3</field>
               </block>
             </value>
             <statement name="DO">
-              <block type="movement_forward" id="356">
+              <block type="movement_forward" id="10">
                 <next>
-                  <block type="robot_delay" id="370" inline="true">
+                  <block type="robot_delay" id="11" inline="true">
                     <value name="DELAY">
-                      <block type="math_number" id="380">
+                      <block type="math_number" id="12">
                         <field name="NUM">1000</field>
                       </block>
                     </value>
@@ -49,7 +49,7 @@
       </block>
     </statement>
     <next>
-      <block type="movement_stop" id="339"></block>
+      <block type="movement_stop" id="13"></block>
     </next>
   </block>
 </xml>
